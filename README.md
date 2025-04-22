@@ -24,3 +24,14 @@ This repository contains a collection of real-world Make automations I've built 
 - **Tools used**: Tally Forms → Perplexity AI → Google Docs → Airtable.
 - **Benefit**: Generates a location report on near by businesses for more sale leads.
 
+### 5. **Call Manager Automation**
+
+- **Purpose**: Automates outbound call handling and logging, simplifying call management and record updates using Airtable and Bland AI Voice Agent.
+- **Tools used**: Airtable, Bland, JSON Parse.
+- **Workflow**:
+  1. Retrieves new call details from Airtable.
+  2. Sends call data through Bland (call management API).
+  3. Parses JSON response from Bland.
+  4. Logs final structured call information back into Airtable for accurate record-keeping and follow-up.
+
+- **Benefit**: Streamlines call management,Uses Bland’s AI voice agents to handle calls intelligently, reducing manual intervention. Ensures accuracy of records, speeds up processing.
