@@ -1,0 +1,940 @@
+{
+    "name": "FLT CHECKLIST",
+    "flow": [
+        {
+            "id": 1,
+            "module": "tally:watchNewResponse",
+            "version": 1,
+            "parameters": {
+                "__IMTHOOK__": 1312356
+            },
+            "mapper": {},
+            "metadata": {
+                "designer": {
+                    "x": -604,
+                    "y": 148
+                },
+                "restore": {
+                    "parameters": {
+                        "__IMTHOOK__": {
+                            "data": {
+                                "editable": "false"
+                            },
+                            "label": "FLT check"
+                        }
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "__IMTHOOK__",
+                        "type": "hook:tally",
+                        "label": "Webhook",
+                        "required": true
+                    }
+                ],
+                "interface": [
+                    {
+                        "name": "eventId",
+                        "type": "text",
+                        "label": "Event ID"
+                    },
+                    {
+                        "name": "responseId",
+                        "type": "text",
+                        "label": "Response ID"
+                    },
+                    {
+                        "name": "submissionId",
+                        "type": "text",
+                        "label": "Submission ID"
+                    },
+                    {
+                        "name": "respondentId",
+                        "type": "text",
+                        "label": "Respondent ID"
+                    },
+                    {
+                        "name": "formId",
+                        "type": "text",
+                        "label": "Form ID"
+                    },
+                    {
+                        "name": "formName",
+                        "type": "text",
+                        "label": "Form Name"
+                    },
+                    {
+                        "name": "createdAt",
+                        "type": "date",
+                        "label": "Created at"
+                    },
+                    {
+                        "name": "fields",
+                        "spec": [
+                            {
+                                "name": "Date",
+                                "type": "text"
+                            },
+                            {
+                                "name": "Truck",
+                                "type": "text"
+                            },
+                            {
+                                "name": "Name",
+                                "type": "text"
+                            },
+                            {
+                                "name": "Inspection type",
+                                "spec": {
+                                    "type": "text"
+                                },
+                                "type": "array"
+                            },
+                            {
+                                "name": "Inspection type (Daily)",
+                                "type": "boolean"
+                            },
+                            {
+                                "name": "Inspection type (Weekly)",
+                                "type": "boolean"
+                            },
+                            {
+                                "name": "Inspection type (Monthly)",
+                                "type": "boolean"
+                            },
+                            {
+                                "name": "Checklist",
+                                "spec": [
+                                    {
+                                        "name": "1e120486-eb45-4663-bf3a-63872ac84216",
+                                        "type": "array",
+                                        "label": "Forklift arms/Attachments"
+                                    },
+                                    {
+                                        "name": "29b70295-c445-4ea3-9acd-36d4cda418c1",
+                                        "type": "array",
+                                        "label": "Carriage Plate"
+                                    },
+                                    {
+                                        "name": "6e986c8f-edfa-4e7d-9dda-f973b6f6e66a",
+                                        "type": "array",
+                                        "label": "Mast"
+                                    },
+                                    {
+                                        "name": "2ae95342-ef5e-4c4f-95e8-e1668aa7c3ac",
+                                        "type": "array",
+                                        "label": "Lift chains/Pulleys"
+                                    },
+                                    {
+                                        "name": "be41cb52-5198-4268-9d12-5148ba4a52ae",
+                                        "type": "array",
+                                        "label": "Hydraulics/controls"
+                                    },
+                                    {
+                                        "name": "107c281c-6557-47f7-a587-5b8e84285b6e",
+                                        "type": "array",
+                                        "label": "Mast controls"
+                                    },
+                                    {
+                                        "name": "afbf4755-5fad-4083-b974-ede78c22405a",
+                                        "type": "array",
+                                        "label": "Wheels &amp; tyres"
+                                    },
+                                    {
+                                        "name": "9ec69c59-287c-454f-9425-e6b570cd32f9",
+                                        "type": "array",
+                                        "label": "Back rest/load guard"
+                                    },
+                                    {
+                                        "name": "32ea2400-5815-4c76-8c19-3facb9b5b947",
+                                        "type": "array",
+                                        "label": "Seat &amp; seat belt"
+                                    },
+                                    {
+                                        "name": "2ee09d1c-8253-42cb-b303-6a26d651fdd1",
+                                        "type": "array",
+                                        "label": "Steering"
+                                    },
+                                    {
+                                        "name": "fdc53dbb-7176-4e49-9d79-f5eee4c7ef0d",
+                                        "type": "array",
+                                        "label": "Driving &amp; brakes"
+                                    },
+                                    {
+                                        "name": "ce14bf2c-f0ee-40e0-b95c-e27be84e56d0",
+                                        "type": "array",
+                                        "label": "Lights/indicators"
+                                    },
+                                    {
+                                        "name": "bdca4c59-0ddc-4a1e-b3c0-e767c739add9",
+                                        "type": "array",
+                                        "label": "Horn"
+                                    },
+                                    {
+                                        "name": "19c1aa9c-6bba-4df3-b126-1052515133a4",
+                                        "type": "array",
+                                        "label": "Capacity plate/safety details"
+                                    },
+                                    {
+                                        "name": "355ffd7b-a190-43ef-b8ab-46218c3da17b",
+                                        "type": "array",
+                                        "label": "External conditions"
+                                    },
+                                    {
+                                        "name": "22612f10-9256-4043-a1c6-0e11880fdad6",
+                                        "type": "array",
+                                        "label": "Fuel/power"
+                                    },
+                                    {
+                                        "name": "3061a8ff-abd8-4a34-8207-c96f2a6e6cc9",
+                                        "type": "array",
+                                        "label": "Fluid levels"
+                                    }
+                                ],
+                                "type": "collection"
+                            },
+                            {
+                                "name": "Additional notes",
+                                "type": "text"
+                            }
+                        ],
+                        "type": "collection",
+                        "label": "Fields"
+                    },
+                    {
+                        "name": "fieldsById",
+                        "spec": [
+                            {
+                                "name": "question_PDdgpb",
+                                "type": "text",
+                                "label": "Date"
+                            },
+                            {
+                                "name": "question_E5kgKN",
+                                "type": "text",
+                                "label": "Truck"
+                            },
+                            {
+                                "name": "question_rBjp5v",
+                                "type": "text",
+                                "label": "Name"
+                            },
+                            {
+                                "name": "question_4B4qQO",
+                                "spec": {
+                                    "type": "text"
+                                },
+                                "type": "array",
+                                "label": "Inspection type"
+                            },
+                            {
+                                "name": "question_4B4qQO_c1a8e77b-e109-4d52-bc8b-87eeb80212f3",
+                                "type": "boolean",
+                                "label": "Inspection type (Daily)"
+                            },
+                            {
+                                "name": "question_4B4qQO_c162253f-ba66-4e39-b84b-b9c632d018e3",
+                                "type": "boolean",
+                                "label": "Inspection type (Weekly)"
+                            },
+                            {
+                                "name": "question_4B4qQO_62cd36f1-38f7-4824-a16b-0d5364a2820b",
+                                "type": "boolean",
+                                "label": "Inspection type (Monthly)"
+                            },
+                            {
+                                "name": "question_jbapZE",
+                                "spec": [
+                                    {
+                                        "name": "1e120486-eb45-4663-bf3a-63872ac84216",
+                                        "type": "array",
+                                        "label": "Forklift arms/Attachments"
+                                    },
+                                    {
+                                        "name": "29b70295-c445-4ea3-9acd-36d4cda418c1",
+                                        "type": "array",
+                                        "label": "Carriage Plate"
+                                    },
+                                    {
+                                        "name": "6e986c8f-edfa-4e7d-9dda-f973b6f6e66a",
+                                        "type": "array",
+                                        "label": "Mast"
+                                    },
+                                    {
+                                        "name": "2ae95342-ef5e-4c4f-95e8-e1668aa7c3ac",
+                                        "type": "array",
+                                        "label": "Lift chains/Pulleys"
+                                    },
+                                    {
+                                        "name": "be41cb52-5198-4268-9d12-5148ba4a52ae",
+                                        "type": "array",
+                                        "label": "Hydraulics/controls"
+                                    },
+                                    {
+                                        "name": "107c281c-6557-47f7-a587-5b8e84285b6e",
+                                        "type": "array",
+                                        "label": "Mast controls"
+                                    },
+                                    {
+                                        "name": "afbf4755-5fad-4083-b974-ede78c22405a",
+                                        "type": "array",
+                                        "label": "Wheels &amp; tyres"
+                                    },
+                                    {
+                                        "name": "9ec69c59-287c-454f-9425-e6b570cd32f9",
+                                        "type": "array",
+                                        "label": "Back rest/load guard"
+                                    },
+                                    {
+                                        "name": "32ea2400-5815-4c76-8c19-3facb9b5b947",
+                                        "type": "array",
+                                        "label": "Seat &amp; seat belt"
+                                    },
+                                    {
+                                        "name": "2ee09d1c-8253-42cb-b303-6a26d651fdd1",
+                                        "type": "array",
+                                        "label": "Steering"
+                                    },
+                                    {
+                                        "name": "fdc53dbb-7176-4e49-9d79-f5eee4c7ef0d",
+                                        "type": "array",
+                                        "label": "Driving &amp; brakes"
+                                    },
+                                    {
+                                        "name": "ce14bf2c-f0ee-40e0-b95c-e27be84e56d0",
+                                        "type": "array",
+                                        "label": "Lights/indicators"
+                                    },
+                                    {
+                                        "name": "bdca4c59-0ddc-4a1e-b3c0-e767c739add9",
+                                        "type": "array",
+                                        "label": "Horn"
+                                    },
+                                    {
+                                        "name": "19c1aa9c-6bba-4df3-b126-1052515133a4",
+                                        "type": "array",
+                                        "label": "Capacity plate/safety details"
+                                    },
+                                    {
+                                        "name": "355ffd7b-a190-43ef-b8ab-46218c3da17b",
+                                        "type": "array",
+                                        "label": "External conditions"
+                                    },
+                                    {
+                                        "name": "22612f10-9256-4043-a1c6-0e11880fdad6",
+                                        "type": "array",
+                                        "label": "Fuel/power"
+                                    },
+                                    {
+                                        "name": "3061a8ff-abd8-4a34-8207-c96f2a6e6cc9",
+                                        "type": "array",
+                                        "label": "Fluid levels"
+                                    }
+                                ],
+                                "type": "collection",
+                                "label": "Checklist"
+                            },
+                            {
+                                "name": "question_2BEZXV",
+                                "type": "text",
+                                "label": "Additional notes"
+                            }
+                        ],
+                        "type": "collection",
+                        "label": "Fields by ID"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 2,
+            "module": "google-docs:createADocumentFromTemplate",
+            "version": 1,
+            "parameters": {
+                "__IMTCONN__": 4167289
+            },
+            "mapper": {
+                "from": "drive",
+                "name": "{{1.formName}}",
+                "select": "dropdown",
+                "document": "/1V7wMlzLA9ql-ukTWOPgmxMcO4eymWnbqb0m0wHok_QA",
+                "folderId": "/1tw4CbcOyPqO7HFGy0fbt1gDCPepw9X7n",
+                "requests": {
+                    "Date": "{{formatDate(now; \"DD/MM/YY HH:mm\")}} GMT",
+                    "Mast": "{{1.fieldsById.question_jbapZE.`6e986c8f-edfa-4e7d-9dda-f973b6f6e66a`[]}}",
+                    "Name": "{{1.fieldsById.question_rBjp5v}}",
+                    "Steering": "{{1.fieldsById.question_jbapZE.`2ee09d1c-8253-42cb-b303-6a26d651fdd1`[]}}",
+                    "Fluid Levels": "{{1.fieldsById.question_jbapZE.`3061a8ff-abd8-4a34-8207-c96f2a6e6cc9`[]}}",
+                    "Fuel / Power": "{{1.fieldsById.question_jbapZE.`22612f10-9256-4043-a1c6-0e11880fdad6`[]}}",
+                    "Mast Controls": "{{1.fieldsById.question_jbapZE.`6e986c8f-edfa-4e7d-9dda-f973b6f6e66a`[]}}",
+                    "Carriage Plate": "{{1.fieldsById.question_jbapZE.`29b70295-c445-4ea3-9acd-36d4cda418c1`[]}}",
+                    "Wheels & Tyres": "{{1.fieldsById.question_jbapZE.`afbf4755-5fad-4083-b974-ede78c22405a`[]}}",
+                    "Inspection type": "{{1.fields.`Inspection type`[]}}",
+                    "Additional_Notes": "{{1.fieldsById.question_2BEZXV}}",
+                    "Seat & Seat Belt": "{{1.fieldsById.question_jbapZE.`32ea2400-5815-4c76-8c19-3facb9b5b947`[]}}",
+                    "Driving & Braking": "{{1.fieldsById.question_jbapZE.`fdc53dbb-7176-4e49-9d79-f5eee4c7ef0d`[]}}",
+                    "Lights & Indicators": "{{1.fieldsById.question_jbapZE.`ce14bf2c-f0ee-40e0-b95c-e27be84e56d0`[]}}",
+                    "Lift Chain & Pulleys": "{{1.fieldsById.question_jbapZE.`2ae95342-ef5e-4c4f-95e8-e1668aa7c3ac`[]}}",
+                    "Hydraulics / Controls": "{{1.fieldsById.question_jbapZE.`be41cb52-5198-4268-9d12-5148ba4a52ae`[]}}",
+                    "Horn / Warning Devices": "{{1.fieldsById.question_jbapZE.`bdca4c59-0ddc-4a1e-b3c0-e767c739add9`[]}}",
+                    "Cab / External Condition": "{{1.fieldsById.question_jbapZE.`355ffd7b-a190-43ef-b8ab-46218c3da17b`[]}}",
+                    "Forklift Arms / Attachment": "{{1.fieldsById.question_jbapZE.`1e120486-eb45-4663-bf3a-63872ac84216`[]}}",
+                    "Capacity Plate & Safety Decals": "{{1.fieldsById.question_jbapZE.`19c1aa9c-6bba-4df3-b126-1052515133a4`[]}}",
+                    "Back Rest Extension / Load Guard": "{{1.fieldsById.question_jbapZE.`9ec69c59-287c-454f-9425-e6b570cd32f9`[]}}"
+                },
+                "destination": "drive"
+            },
+            "metadata": {
+                "designer": {
+                    "x": -304,
+                    "y": 148
+                },
+                "restore": {
+                    "expect": {
+                        "from": {
+                            "label": "My Drive"
+                        },
+                        "select": {
+                            "label": "By Dropdown"
+                        },
+                        "document": {
+                            "path": [
+                                "102FLT checklist"
+                            ]
+                        },
+                        "folderId": {
+                            "mode": "chose",
+                            "path": [
+                                "Google AI Studio"
+                            ]
+                        },
+                        "destination": {
+                            "label": "My Drive"
+                        }
+                    },
+                    "parameters": {
+                        "__IMTCONN__": {
+                            "data": {
+                                "scoped": "true",
+                                "connection": "google"
+                            },
+                            "label": "My Google connection (wowimadeit77@gmail.com)"
+                        }
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "__IMTCONN__",
+                        "type": "account:google",
+                        "label": "Connection",
+                        "required": true
+                    }
+                ],
+                "expect": [
+                    {
+                        "name": "select",
+                        "type": "select",
+                        "label": "Create a Document from a Template",
+                        "required": true,
+                        "validate": {
+                            "enum": [
+                                "map",
+                                "dropdown"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "name",
+                        "type": "text",
+                        "label": "Title",
+                        "required": true
+                    },
+                    {
+                        "name": "destination",
+                        "type": "select",
+                        "label": "New Drive Location",
+                        "required": true,
+                        "validate": {
+                            "enum": [
+                                "drive",
+                                "share",
+                                "team"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "from",
+                        "type": "select",
+                        "label": "Choose a Drive",
+                        "required": true,
+                        "validate": {
+                            "enum": [
+                                "drive",
+                                "share",
+                                "team"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "document",
+                        "type": "file",
+                        "label": "Document ID",
+                        "required": true
+                    },
+                    {
+                        "name": "requests",
+                        "spec": [
+                            {
+                                "name": "Date",
+                                "type": "any"
+                            },
+                            {
+                                "name": "Name",
+                                "type": "any"
+                            },
+                            {
+                                "name": "Inspection type",
+                                "type": "any"
+                            },
+                            {
+                                "name": "Forklift Arms / Attachment",
+                                "type": "any"
+                            },
+                            {
+                                "name": "Carriage Plate",
+                                "type": "any"
+                            },
+                            {
+                                "name": "Mast",
+                                "type": "any"
+                            },
+                            {
+                                "name": "Back Rest Extension / Load Guard",
+                                "type": "any"
+                            },
+                            {
+                                "name": "Lift Chain & Pulleys",
+                                "type": "any"
+                            },
+                            {
+                                "name": "Hydraulics / Controls",
+                                "type": "any"
+                            },
+                            {
+                                "name": "Mast Controls",
+                                "type": "any"
+                            },
+                            {
+                                "name": "Wheels & Tyres",
+                                "type": "any"
+                            },
+                            {
+                                "name": "Steering",
+                                "type": "any"
+                            },
+                            {
+                                "name": "Driving & Braking",
+                                "type": "any"
+                            },
+                            {
+                                "name": "Seat & Seat Belt",
+                                "type": "any"
+                            },
+                            {
+                                "name": "Lights & Indicators",
+                                "type": "any"
+                            },
+                            {
+                                "name": "Horn / Warning Devices",
+                                "type": "any"
+                            },
+                            {
+                                "name": "Capacity Plate & Safety Decals",
+                                "type": "any"
+                            },
+                            {
+                                "name": "Cab / External Condition",
+                                "type": "any"
+                            },
+                            {
+                                "name": "Fuel / Power",
+                                "type": "any"
+                            },
+                            {
+                                "name": "Fluid Levels",
+                                "type": "any"
+                            },
+                            {
+                                "name": "Additional_Notes",
+                                "type": "any"
+                            }
+                        ],
+                        "type": "collection",
+                        "label": "Values"
+                    },
+                    {
+                        "name": "folderId",
+                        "type": "folder",
+                        "label": "New Document's Location",
+                        "required": true
+                    }
+                ]
+            }
+        },
+        {
+            "id": 3,
+            "module": "google-docs:exportADocument",
+            "version": 1,
+            "parameters": {
+                "__IMTCONN__": 4167289
+            },
+            "mapper": {
+                "document": "{{2.id}}",
+                "mimeType": "application/pdf",
+                "destination": "drive"
+            },
+            "metadata": {
+                "designer": {
+                    "x": -4,
+                    "y": 148
+                },
+                "restore": {
+                    "expect": {
+                        "document": {
+                            "mode": "edit",
+                            "path": []
+                        },
+                        "mimeType": {
+                            "mode": "chose",
+                            "label": "PDF Document (.pdf)"
+                        },
+                        "destination": {
+                            "label": "My Drive"
+                        }
+                    },
+                    "parameters": {
+                        "__IMTCONN__": {
+                            "data": {
+                                "scoped": "true",
+                                "connection": "google"
+                            },
+                            "label": "My Google connection (wowimadeit77@gmail.com)"
+                        }
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "__IMTCONN__",
+                        "type": "account:google",
+                        "label": "Connection",
+                        "required": true
+                    }
+                ],
+                "expect": [
+                    {
+                        "name": "destination",
+                        "type": "select",
+                        "label": "Choose a Drive",
+                        "required": true,
+                        "validate": {
+                            "enum": [
+                                "drive",
+                                "share",
+                                "team"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "mimeType",
+                        "type": "select",
+                        "label": "Type",
+                        "required": true,
+                        "validate": {
+                            "enum": [
+                                "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+                                "application/vnd.oasis.opendocument.text",
+                                "application/rtf",
+                                "application/pdf",
+                                "text/plain",
+                                "text/html",
+                                "application/epub+zip"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "document",
+                        "type": "file",
+                        "label": "Document ID",
+                        "required": true
+                    }
+                ]
+            }
+        },
+        {
+            "id": 4,
+            "module": "email:ActionSendEmail",
+            "version": 7,
+            "parameters": {
+                "account": 4173492,
+                "saveAfterSent": false
+            },
+            "mapper": {
+                "cc": [],
+                "to": "alicia.foers@zeron.eco",
+                "bcc": [],
+                "from": "",
+                "html": "{{2.name}}",
+                "sender": "",
+                "headers": [],
+                "replyTo": "",
+                "subject": "{{2.name}}",
+                "priority": "normal",
+                "inReplyTo": "",
+                "references": [],
+                "attachments": [
+                    {
+                        "cid": "{{1.formId}}",
+                        "data": "{{3.data}}",
+                        "fileName": "{{3.filename}}"
+                    }
+                ],
+                "contentType": "html"
+            },
+            "metadata": {
+                "designer": {
+                    "x": 296,
+                    "y": 148
+                },
+                "restore": {
+                    "expect": {
+                        "cc": {
+                            "mode": "chose"
+                        },
+                        "to": {
+                            "mode": "edit"
+                        },
+                        "bcc": {
+                            "mode": "chose"
+                        },
+                        "priority": {
+                            "label": "Normal"
+                        },
+                        "references": {
+                            "mode": "chose"
+                        },
+                        "attachments": {
+                            "mode": "chose",
+                            "items": [
+                                null
+                            ]
+                        },
+                        "contentType": {
+                            "label": "HTML"
+                        }
+                    },
+                    "parameters": {
+                        "account": {
+                            "data": {
+                                "scoped": "true",
+                                "connection": "smtp"
+                            },
+                            "label": "My Others (SMTP) connection (SMTP wowimadeit@gmx.com)"
+                        },
+                        "saveAfterSent": {
+                            "label": "No"
+                        }
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "account",
+                        "type": "account:smtp,google-restricted,microsoft-smtp-imap",
+                        "label": "Connection",
+                        "required": true
+                    },
+                    {
+                        "name": "saveAfterSent",
+                        "type": "select",
+                        "label": "Save message after sending",
+                        "required": true,
+                        "validate": {
+                            "enum": [
+                                true,
+                                false
+                            ]
+                        }
+                    },
+                    {
+                        "type": "hidden"
+                    }
+                ],
+                "expect": [
+                    {
+                        "name": "to",
+                        "spec": {
+                            "name": "value",
+                            "type": "email",
+                            "label": "Email address",
+                            "required": true
+                        },
+                        "type": "array",
+                        "label": "To",
+                        "required": true
+                    },
+                    {
+                        "name": "subject",
+                        "type": "text",
+                        "label": "Subject"
+                    },
+                    {
+                        "name": "contentType",
+                        "type": "select",
+                        "label": "Content Type",
+                        "required": true,
+                        "validate": {
+                            "enum": [
+                                "html",
+                                "text"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "attachments",
+                        "spec": [
+                            {
+                                "name": "fileName",
+                                "type": "filename",
+                                "label": "File name",
+                                "required": true,
+                                "semantic": "file:name"
+                            },
+                            {
+                                "name": "data",
+                                "type": "buffer",
+                                "label": "Data",
+                                "required": true,
+                                "semantic": "file:data"
+                            },
+                            {
+                                "name": "cid",
+                                "type": "text",
+                                "label": "Content-ID"
+                            }
+                        ],
+                        "type": "array",
+                        "label": "Attachments"
+                    },
+                    {
+                        "name": "cc",
+                        "spec": {
+                            "name": "value",
+                            "type": "email",
+                            "label": "Email address"
+                        },
+                        "type": "array",
+                        "label": "Copy recipient"
+                    },
+                    {
+                        "name": "bcc",
+                        "spec": {
+                            "name": "value",
+                            "type": "email",
+                            "label": "Email address"
+                        },
+                        "type": "array",
+                        "label": "Blind copy recipient"
+                    },
+                    {
+                        "name": "from",
+                        "type": "text",
+                        "label": "From"
+                    },
+                    {
+                        "name": "sender",
+                        "type": "text",
+                        "label": "Sender"
+                    },
+                    {
+                        "name": "replyTo",
+                        "type": "text",
+                        "label": "Reply-To"
+                    },
+                    {
+                        "name": "inReplyTo",
+                        "type": "text",
+                        "label": "In-Reply-To"
+                    },
+                    {
+                        "name": "references",
+                        "spec": {
+                            "name": "value",
+                            "type": "text",
+                            "label": "Reference",
+                            "required": true
+                        },
+                        "type": "array",
+                        "label": "References"
+                    },
+                    {
+                        "name": "priority",
+                        "type": "select",
+                        "label": "Priority",
+                        "validate": {
+                            "enum": [
+                                "high",
+                                "normal",
+                                "low"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "headers",
+                        "spec": [
+                            {
+                                "name": "key",
+                                "type": "text",
+                                "label": "Key",
+                                "required": true
+                            },
+                            {
+                                "name": "value",
+                                "type": "text",
+                                "label": "Value",
+                                "required": true
+                            }
+                        ],
+                        "type": "array",
+                        "label": "Headers"
+                    },
+                    {
+                        "name": "html",
+                        "type": "text",
+                        "label": "Content"
+                    }
+                ],
+                "advanced": true
+            }
+        }
+    ],
+    "metadata": {
+        "instant": true,
+        "version": 1,
+        "scenario": {
+            "roundtrips": 1,
+            "maxErrors": 3,
+            "autoCommit": true,
+            "autoCommitTriggerLast": true,
+            "sequential": false,
+            "slots": null,
+            "confidential": false,
+            "dataloss": false,
+            "dlq": false,
+            "freshVariables": false
+        },
+        "designer": {
+            "orphans": []
+        },
+        "zone": "eu2.make.com",
+        "notes": []
+    }
+}

@@ -1,0 +1,956 @@
+{
+    "name": "VEHICLE CHECKLIST",
+    "flow": [
+        {
+            "id": 1,
+            "module": "tally:watchNewResponse",
+            "version": 1,
+            "parameters": {
+                "__IMTHOOK__": 1306367
+            },
+            "mapper": {},
+            "metadata": {
+                "designer": {
+                    "x": 0,
+                    "y": 0,
+                    "name": "FORM GETS FILLED"
+                },
+                "restore": {
+                    "parameters": {
+                        "__IMTHOOK__": {
+                            "data": {
+                                "editable": "false"
+                            },
+                            "label": "My New Response webhook"
+                        }
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "__IMTHOOK__",
+                        "type": "hook:tally",
+                        "label": "Webhook",
+                        "required": true
+                    }
+                ],
+                "interface": [
+                    {
+                        "name": "eventId",
+                        "type": "text",
+                        "label": "Event ID"
+                    },
+                    {
+                        "name": "responseId",
+                        "type": "text",
+                        "label": "Response ID"
+                    },
+                    {
+                        "name": "submissionId",
+                        "type": "text",
+                        "label": "Submission ID"
+                    },
+                    {
+                        "name": "respondentId",
+                        "type": "text",
+                        "label": "Respondent ID"
+                    },
+                    {
+                        "name": "formId",
+                        "type": "text",
+                        "label": "Form ID"
+                    },
+                    {
+                        "name": "formName",
+                        "type": "text",
+                        "label": "Form Name"
+                    },
+                    {
+                        "name": "createdAt",
+                        "type": "date",
+                        "label": "Created at"
+                    },
+                    {
+                        "name": "fields",
+                        "spec": [
+                            {
+                                "name": "Full name",
+                                "type": "text"
+                            },
+                            {
+                                "name": "Vehicle registration",
+                                "type": "text"
+                            },
+                            {
+                                "name": "Date",
+                                "type": "text"
+                            },
+                            {
+                                "name": "Mileage",
+                                "type": "number"
+                            },
+                            {
+                                "name": "Checklist",
+                                "spec": [
+                                    {
+                                        "name": "de6ee3b8-ab33-4bf8-b0dd-02c5e0f0e2a4",
+                                        "type": "array",
+                                        "label": "Fuel"
+                                    },
+                                    {
+                                        "name": "05c7d03b-827f-43b1-9a8b-d6f41a097f12",
+                                        "type": "array",
+                                        "label": "Coolant level"
+                                    },
+                                    {
+                                        "name": "49945466-7e55-4b2c-a73b-48a4f5091573",
+                                        "type": "array",
+                                        "label": "Oil level"
+                                    },
+                                    {
+                                        "name": "9246ef6a-7c75-46d5-baa4-f4e877f52dae",
+                                        "type": "array",
+                                        "label": "Brake fluid"
+                                    },
+                                    {
+                                        "name": "7c8ca9b3-228e-4b99-aff9-e108b3a54dd8",
+                                        "type": "array",
+                                        "label": "Battery"
+                                    },
+                                    {
+                                        "name": "c2f44487-a607-464d-8c44-1b3386bafd41",
+                                        "type": "array",
+                                        "label": "Lights"
+                                    },
+                                    {
+                                        "name": "8430cd21-21c5-42e4-a528-b1ad56275802",
+                                        "type": "array",
+                                        "label": "Washer"
+                                    },
+                                    {
+                                        "name": "78d87387-9946-4dcb-8fff-60c956733165",
+                                        "type": "array",
+                                        "label": "Indicators"
+                                    },
+                                    {
+                                        "name": "b59c1929-4379-4446-b0f1-fe9a69c2deb0",
+                                        "type": "array",
+                                        "label": "Wipers"
+                                    },
+                                    {
+                                        "name": "b8f90bfa-fe6f-4850-879a-8eb4c97046b0",
+                                        "type": "array",
+                                        "label": "Reflectors"
+                                    },
+                                    {
+                                        "name": "94e722bd-d5a1-48f3-8dbb-622a561d7024",
+                                        "type": "array",
+                                        "label": "Safe load"
+                                    },
+                                    {
+                                        "name": "79b911af-1ad0-40b4-8b22-1a48c5496521",
+                                        "type": "array",
+                                        "label": "Wheel nuts"
+                                    },
+                                    {
+                                        "name": "6da23283-51e6-4866-8151-8dafbe0f7bae",
+                                        "type": "array",
+                                        "label": "Tyre condition"
+                                    },
+                                    {
+                                        "name": "24a741e9-7df8-4bc0-a382-ef148f3ef0f9",
+                                        "type": "array",
+                                        "label": "Footbrake"
+                                    },
+                                    {
+                                        "name": "d8a6986e-63fe-434d-87ce-75c52c8355cf",
+                                        "type": "array",
+                                        "label": "Number plates"
+                                    },
+                                    {
+                                        "name": "49664a02-6aae-43bc-809c-04b17f4c2e6b",
+                                        "type": "array",
+                                        "label": "Windscreen"
+                                    },
+                                    {
+                                        "name": "cb46de8c-dd8e-4399-b02c-447af20fefff",
+                                        "type": "array",
+                                        "label": "Mirrors"
+                                    },
+                                    {
+                                        "name": "d8fc9c8e-67a5-49af-a3f6-106215984eb2",
+                                        "type": "array",
+                                        "label": "Horn"
+                                    },
+                                    {
+                                        "name": "ec436155-0007-4e54-a623-bc6b97c71db0",
+                                        "type": "array",
+                                        "label": "Handbrake"
+                                    },
+                                    {
+                                        "name": "e5ad345f-f370-48ff-bcea-c1e4de949b6f",
+                                        "type": "array",
+                                        "label": "Tyre pressure"
+                                    }
+                                ],
+                                "type": "collection"
+                            },
+                            {
+                                "name": "Additional notes",
+                                "type": "text"
+                            }
+                        ],
+                        "type": "collection",
+                        "label": "Fields"
+                    },
+                    {
+                        "name": "fieldsById",
+                        "spec": [
+                            {
+                                "name": "question_vM7y0A",
+                                "type": "text",
+                                "label": "Full name"
+                            },
+                            {
+                                "name": "question_Kz7lPM",
+                                "type": "text",
+                                "label": "Vehicle registration"
+                            },
+                            {
+                                "name": "question_L9AWEG",
+                                "type": "text",
+                                "label": "Date"
+                            },
+                            {
+                                "name": "question_prjB0V",
+                                "type": "number",
+                                "label": "Mileage"
+                            },
+                            {
+                                "name": "question_1XZ7bM",
+                                "spec": [
+                                    {
+                                        "name": "de6ee3b8-ab33-4bf8-b0dd-02c5e0f0e2a4",
+                                        "type": "array",
+                                        "label": "Fuel"
+                                    },
+                                    {
+                                        "name": "05c7d03b-827f-43b1-9a8b-d6f41a097f12",
+                                        "type": "array",
+                                        "label": "Coolant level"
+                                    },
+                                    {
+                                        "name": "49945466-7e55-4b2c-a73b-48a4f5091573",
+                                        "type": "array",
+                                        "label": "Oil level"
+                                    },
+                                    {
+                                        "name": "9246ef6a-7c75-46d5-baa4-f4e877f52dae",
+                                        "type": "array",
+                                        "label": "Brake fluid"
+                                    },
+                                    {
+                                        "name": "7c8ca9b3-228e-4b99-aff9-e108b3a54dd8",
+                                        "type": "array",
+                                        "label": "Battery"
+                                    },
+                                    {
+                                        "name": "c2f44487-a607-464d-8c44-1b3386bafd41",
+                                        "type": "array",
+                                        "label": "Lights"
+                                    },
+                                    {
+                                        "name": "8430cd21-21c5-42e4-a528-b1ad56275802",
+                                        "type": "array",
+                                        "label": "Washer"
+                                    },
+                                    {
+                                        "name": "78d87387-9946-4dcb-8fff-60c956733165",
+                                        "type": "array",
+                                        "label": "Indicators"
+                                    },
+                                    {
+                                        "name": "b59c1929-4379-4446-b0f1-fe9a69c2deb0",
+                                        "type": "array",
+                                        "label": "Wipers"
+                                    },
+                                    {
+                                        "name": "b8f90bfa-fe6f-4850-879a-8eb4c97046b0",
+                                        "type": "array",
+                                        "label": "Reflectors"
+                                    },
+                                    {
+                                        "name": "94e722bd-d5a1-48f3-8dbb-622a561d7024",
+                                        "type": "array",
+                                        "label": "Safe load"
+                                    },
+                                    {
+                                        "name": "79b911af-1ad0-40b4-8b22-1a48c5496521",
+                                        "type": "array",
+                                        "label": "Wheel nuts"
+                                    },
+                                    {
+                                        "name": "6da23283-51e6-4866-8151-8dafbe0f7bae",
+                                        "type": "array",
+                                        "label": "Tyre condition"
+                                    },
+                                    {
+                                        "name": "24a741e9-7df8-4bc0-a382-ef148f3ef0f9",
+                                        "type": "array",
+                                        "label": "Footbrake"
+                                    },
+                                    {
+                                        "name": "d8a6986e-63fe-434d-87ce-75c52c8355cf",
+                                        "type": "array",
+                                        "label": "Number plates"
+                                    },
+                                    {
+                                        "name": "49664a02-6aae-43bc-809c-04b17f4c2e6b",
+                                        "type": "array",
+                                        "label": "Windscreen"
+                                    },
+                                    {
+                                        "name": "cb46de8c-dd8e-4399-b02c-447af20fefff",
+                                        "type": "array",
+                                        "label": "Mirrors"
+                                    },
+                                    {
+                                        "name": "d8fc9c8e-67a5-49af-a3f6-106215984eb2",
+                                        "type": "array",
+                                        "label": "Horn"
+                                    },
+                                    {
+                                        "name": "ec436155-0007-4e54-a623-bc6b97c71db0",
+                                        "type": "array",
+                                        "label": "Handbrake"
+                                    },
+                                    {
+                                        "name": "e5ad345f-f370-48ff-bcea-c1e4de949b6f",
+                                        "type": "array",
+                                        "label": "Tyre pressure"
+                                    }
+                                ],
+                                "type": "collection",
+                                "label": "Checklist"
+                            },
+                            {
+                                "name": "question_MXkzrY",
+                                "type": "text",
+                                "label": "Additional notes"
+                            }
+                        ],
+                        "type": "collection",
+                        "label": "Fields by ID"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 16,
+            "module": "google-docs:createADocumentFromTemplate",
+            "version": 1,
+            "parameters": {
+                "__IMTCONN__": 4167289
+            },
+            "mapper": {
+                "from": "drive",
+                "name": "{{1.formName}}",
+                "select": "dropdown",
+                "document": "/1Z2CqXzObinxEfetu01KeeOEnrlX4iKxDJkIHdWWyr_E",
+                "folderId": "/1tw4CbcOyPqO7HFGy0fbt1gDCPepw9X7n",
+                "requests": {
+                    "date": "{{formatDate(now; \"DD/MM/YY HH:mm\")}} GMT",
+                    "fuel": "{{1.fieldsById.question_1XZ7bM.`de6ee3b8-ab33-4bf8-b0dd-02c5e0f0e2a4`[]}}",
+                    "horn": "{{1.fieldsById.question_1XZ7bM.`d8fc9c8e-67a5-49af-a3f6-106215984eb2`[]}}",
+                    "lights": "{{1.fieldsById.question_1XZ7bM.`c2f44487-a607-464d-8c44-1b3386bafd41`[]}}",
+                    "washer": "{{1.fieldsById.question_1XZ7bM.`8430cd21-21c5-42e4-a528-b1ad56275802`[]}}",
+                    "wipers": "{{1.fieldsById.question_1XZ7bM.`b59c1929-4379-4446-b0f1-fe9a69c2deb0`[]}}",
+                    "battery": "{{1.fieldsById.question_1XZ7bM.`7c8ca9b3-228e-4b99-aff9-e108b3a54dd8`[]}}",
+                    "mileage": "{{1.fields.Mileage}}",
+                    "mirrors": "{{1.fieldsById.question_1XZ7bM.`cb46de8c-dd8e-4399-b02c-447af20fefff`[]}}",
+                    "footbrake": "{{1.fieldsById.question_1XZ7bM.`24a741e9-7df8-4bc0-a382-ef148f3ef0f9`[]}}",
+                    "full_name": "{{1.fields.`Full name`}}",
+                    "oil_level": "{{1.fieldsById.question_1XZ7bM.`49945466-7e55-4b2c-a73b-48a4f5091573`[]}}",
+                    "safe_load": "{{1.fieldsById.question_1XZ7bM.`94e722bd-d5a1-48f3-8dbb-622a561d7024`[]}}",
+                    "indicators": "{{1.fieldsById.question_1XZ7bM.`78d87387-9946-4dcb-8fff-60c956733165`[]}}",
+                    "reflectors": "{{1.fieldsById.question_1XZ7bM.`b8f90bfa-fe6f-4850-879a-8eb4c97046b0`[]}}",
+                    "wheel_nuts": "{{1.fieldsById.question_1XZ7bM.`79b911af-1ad0-40b4-8b22-1a48c5496521`[]}}",
+                    "windscreen": "{{1.fieldsById.question_1XZ7bM.`49664a02-6aae-43bc-809c-04b17f4c2e6b`[]}}",
+                    "brake_fluid": "{{1.fieldsById.question_1XZ7bM.`9246ef6a-7c75-46d5-baa4-f4e877f52dae`[]}}",
+                    "number_plate": "{{1.fieldsById.question_1XZ7bM.`d8a6986e-63fe-434d-87ce-75c52c8355cf`[]}}",
+                    "coolant_level": "{{1.fieldsById.question_1XZ7bM.`05c7d03b-827f-43b1-9a8b-d6f41a097f12`[]}}",
+                    "tyre_pressure": "{{1.fieldsById.question_1XZ7bM.`e5ad345f-f370-48ff-bcea-c1e4de949b6f`[]}}",
+                    "tyre_condition": "{{1.fieldsById.question_1XZ7bM.`6da23283-51e6-4866-8151-8dafbe0f7bae`[]}}",
+                    "additional_notes": "{{1.fieldsById.question_MXkzrY}}",
+                    "vehicle_registration": "{{1.fields.`Vehicle registration`}}"
+                },
+                "destination": "drive"
+            },
+            "metadata": {
+                "designer": {
+                    "x": 300,
+                    "y": 0,
+                    "name": "CREATES PDF"
+                },
+                "restore": {
+                    "expect": {
+                        "from": {
+                            "label": "My Drive"
+                        },
+                        "select": {
+                            "label": "By Dropdown"
+                        },
+                        "document": {
+                            "path": [
+                                "PDF VEHICLE CHECKLIST"
+                            ]
+                        },
+                        "folderId": {
+                            "mode": "chose",
+                            "path": [
+                                "Google AI Studio"
+                            ]
+                        },
+                        "destination": {
+                            "label": "My Drive"
+                        }
+                    },
+                    "parameters": {
+                        "__IMTCONN__": {
+                            "data": {
+                                "scoped": "true",
+                                "connection": "google"
+                            },
+                            "label": "My Google connection"
+                        }
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "__IMTCONN__",
+                        "type": "account:google",
+                        "label": "Connection",
+                        "required": true
+                    }
+                ],
+                "expect": [
+                    {
+                        "name": "select",
+                        "type": "select",
+                        "label": "Create a Document from a Template",
+                        "required": true,
+                        "validate": {
+                            "enum": [
+                                "map",
+                                "dropdown"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "name",
+                        "type": "text",
+                        "label": "Title",
+                        "required": true
+                    },
+                    {
+                        "name": "destination",
+                        "type": "select",
+                        "label": "New Drive Location",
+                        "required": true,
+                        "validate": {
+                            "enum": [
+                                "drive",
+                                "share",
+                                "team"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "from",
+                        "type": "select",
+                        "label": "Choose a Drive",
+                        "required": true,
+                        "validate": {
+                            "enum": [
+                                "drive",
+                                "share",
+                                "team"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "document",
+                        "type": "file",
+                        "label": "Document ID",
+                        "required": true
+                    },
+                    {
+                        "name": "requests",
+                        "spec": [
+                            {
+                                "name": "date",
+                                "type": "any"
+                            },
+                            {
+                                "name": "full_name",
+                                "type": "any"
+                            },
+                            {
+                                "name": "vehicle_registration",
+                                "type": "any"
+                            },
+                            {
+                                "name": "mileage",
+                                "type": "any"
+                            },
+                            {
+                                "name": "fuel",
+                                "type": "any"
+                            },
+                            {
+                                "name": "oil_level",
+                                "type": "any"
+                            },
+                            {
+                                "name": "coolant_level",
+                                "type": "any"
+                            },
+                            {
+                                "name": "brake_fluid",
+                                "type": "any"
+                            },
+                            {
+                                "name": "number_plate",
+                                "type": "any"
+                            },
+                            {
+                                "name": "battery",
+                                "type": "any"
+                            },
+                            {
+                                "name": "lights",
+                                "type": "any"
+                            },
+                            {
+                                "name": "indicators",
+                                "type": "any"
+                            },
+                            {
+                                "name": "reflectors",
+                                "type": "any"
+                            },
+                            {
+                                "name": "washer",
+                                "type": "any"
+                            },
+                            {
+                                "name": "wipers",
+                                "type": "any"
+                            },
+                            {
+                                "name": "windscreen",
+                                "type": "any"
+                            },
+                            {
+                                "name": "mirrors",
+                                "type": "any"
+                            },
+                            {
+                                "name": "horn",
+                                "type": "any"
+                            },
+                            {
+                                "name": "footbrake",
+                                "type": "any"
+                            },
+                            {
+                                "name": "wheel_nuts",
+                                "type": "any"
+                            },
+                            {
+                                "name": "tyre_condition",
+                                "type": "any"
+                            },
+                            {
+                                "name": "tyre_pressure",
+                                "type": "any"
+                            },
+                            {
+                                "name": "safe_load",
+                                "type": "any"
+                            },
+                            {
+                                "name": "additional_notes",
+                                "type": "any"
+                            }
+                        ],
+                        "type": "collection",
+                        "label": "Values"
+                    },
+                    {
+                        "name": "folderId",
+                        "type": "folder",
+                        "label": "New Document's Location",
+                        "required": true
+                    }
+                ]
+            }
+        },
+        {
+            "id": 22,
+            "module": "google-docs:exportADocument",
+            "version": 1,
+            "parameters": {
+                "__IMTCONN__": 4167289
+            },
+            "mapper": {
+                "document": "{{16.id}}",
+                "mimeType": "application/pdf",
+                "destination": "drive"
+            },
+            "metadata": {
+                "designer": {
+                    "x": 600,
+                    "y": 0,
+                    "name": "DOWNLOADS PDF"
+                },
+                "restore": {
+                    "expect": {
+                        "document": {
+                            "mode": "edit",
+                            "path": []
+                        },
+                        "mimeType": {
+                            "mode": "chose",
+                            "label": "PDF Document (.pdf)"
+                        },
+                        "destination": {
+                            "label": "My Drive"
+                        }
+                    },
+                    "parameters": {
+                        "__IMTCONN__": {
+                            "data": {
+                                "scoped": "true",
+                                "connection": "google"
+                            },
+                            "label": "My Google connection (wowimadeit77@gmail.com)"
+                        }
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "__IMTCONN__",
+                        "type": "account:google",
+                        "label": "Connection",
+                        "required": true
+                    }
+                ],
+                "expect": [
+                    {
+                        "name": "destination",
+                        "type": "select",
+                        "label": "Choose a Drive",
+                        "required": true,
+                        "validate": {
+                            "enum": [
+                                "drive",
+                                "share",
+                                "team"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "mimeType",
+                        "type": "select",
+                        "label": "Type",
+                        "required": true,
+                        "validate": {
+                            "enum": [
+                                "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+                                "application/vnd.oasis.opendocument.text",
+                                "application/rtf",
+                                "application/pdf",
+                                "text/plain",
+                                "text/html",
+                                "application/epub+zip"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "document",
+                        "type": "file",
+                        "label": "Document ID",
+                        "required": true
+                    }
+                ]
+            }
+        },
+        {
+            "id": 23,
+            "module": "email:ActionSendEmail",
+            "version": 7,
+            "parameters": {
+                "account": 4173492,
+                "saveAfterSent": false
+            },
+            "mapper": {
+                "cc": [],
+                "to": "alicia.foers@zeron.eco",
+                "bcc": [],
+                "from": "",
+                "html": "{{16.name}}",
+                "sender": "",
+                "headers": [],
+                "replyTo": "",
+                "subject": "{{16.name}}",
+                "priority": "normal",
+                "inReplyTo": "",
+                "references": [],
+                "attachments": [
+                    {
+                        "cid": "{{1.formId}}",
+                        "data": "{{22.data}}",
+                        "fileName": "{{22.filename}}"
+                    }
+                ],
+                "contentType": "html"
+            },
+            "metadata": {
+                "designer": {
+                    "x": 900,
+                    "y": 0,
+                    "name": "EMAIL HR"
+                },
+                "restore": {
+                    "expect": {
+                        "cc": {
+                            "mode": "chose"
+                        },
+                        "to": {
+                            "mode": "edit"
+                        },
+                        "bcc": {
+                            "mode": "chose"
+                        },
+                        "priority": {
+                            "label": "Normal"
+                        },
+                        "references": {
+                            "mode": "chose"
+                        },
+                        "attachments": {
+                            "mode": "chose",
+                            "items": [
+                                null
+                            ]
+                        },
+                        "contentType": {
+                            "label": "HTML"
+                        }
+                    },
+                    "parameters": {
+                        "account": {
+                            "data": {
+                                "scoped": "true",
+                                "connection": "smtp"
+                            },
+                            "label": "My Others (SMTP) connection (SMTP wowimadeit@gmx.com)"
+                        },
+                        "saveAfterSent": {
+                            "label": "No"
+                        }
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "account",
+                        "type": "account:smtp,google-restricted,microsoft-smtp-imap",
+                        "label": "Connection",
+                        "required": true
+                    },
+                    {
+                        "name": "saveAfterSent",
+                        "type": "select",
+                        "label": "Save message after sending",
+                        "required": true,
+                        "validate": {
+                            "enum": [
+                                true,
+                                false
+                            ]
+                        }
+                    },
+                    {
+                        "type": "hidden"
+                    }
+                ],
+                "expect": [
+                    {
+                        "name": "to",
+                        "spec": {
+                            "name": "value",
+                            "type": "email",
+                            "label": "Email address",
+                            "required": true
+                        },
+                        "type": "array",
+                        "label": "To",
+                        "required": true
+                    },
+                    {
+                        "name": "subject",
+                        "type": "text",
+                        "label": "Subject"
+                    },
+                    {
+                        "name": "contentType",
+                        "type": "select",
+                        "label": "Content Type",
+                        "required": true,
+                        "validate": {
+                            "enum": [
+                                "html",
+                                "text"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "attachments",
+                        "spec": [
+                            {
+                                "name": "fileName",
+                                "type": "filename",
+                                "label": "File name",
+                                "required": true,
+                                "semantic": "file:name"
+                            },
+                            {
+                                "name": "data",
+                                "type": "buffer",
+                                "label": "Data",
+                                "required": true,
+                                "semantic": "file:data"
+                            },
+                            {
+                                "name": "cid",
+                                "type": "text",
+                                "label": "Content-ID"
+                            }
+                        ],
+                        "type": "array",
+                        "label": "Attachments"
+                    },
+                    {
+                        "name": "cc",
+                        "spec": {
+                            "name": "value",
+                            "type": "email",
+                            "label": "Email address"
+                        },
+                        "type": "array",
+                        "label": "Copy recipient"
+                    },
+                    {
+                        "name": "bcc",
+                        "spec": {
+                            "name": "value",
+                            "type": "email",
+                            "label": "Email address"
+                        },
+                        "type": "array",
+                        "label": "Blind copy recipient"
+                    },
+                    {
+                        "name": "from",
+                        "type": "text",
+                        "label": "From"
+                    },
+                    {
+                        "name": "sender",
+                        "type": "text",
+                        "label": "Sender"
+                    },
+                    {
+                        "name": "replyTo",
+                        "type": "text",
+                        "label": "Reply-To"
+                    },
+                    {
+                        "name": "inReplyTo",
+                        "type": "text",
+                        "label": "In-Reply-To"
+                    },
+                    {
+                        "name": "references",
+                        "spec": {
+                            "name": "value",
+                            "type": "text",
+                            "label": "Reference",
+                            "required": true
+                        },
+                        "type": "array",
+                        "label": "References"
+                    },
+                    {
+                        "name": "priority",
+                        "type": "select",
+                        "label": "Priority",
+                        "validate": {
+                            "enum": [
+                                "high",
+                                "normal",
+                                "low"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "headers",
+                        "spec": [
+                            {
+                                "name": "key",
+                                "type": "text",
+                                "label": "Key",
+                                "required": true
+                            },
+                            {
+                                "name": "value",
+                                "type": "text",
+                                "label": "Value",
+                                "required": true
+                            }
+                        ],
+                        "type": "array",
+                        "label": "Headers"
+                    },
+                    {
+                        "name": "html",
+                        "type": "text",
+                        "label": "Content"
+                    }
+                ],
+                "advanced": true
+            }
+        }
+    ],
+    "metadata": {
+        "instant": false,
+        "version": 1,
+        "scenario": {
+            "roundtrips": 1,
+            "maxErrors": 3,
+            "autoCommit": true,
+            "autoCommitTriggerLast": true,
+            "sequential": false,
+            "slots": null,
+            "confidential": false,
+            "dataloss": false,
+            "dlq": false,
+            "freshVariables": false
+        },
+        "designer": {
+            "orphans": []
+        },
+        "zone": "eu2.make.com",
+        "notes": []
+    }
+}

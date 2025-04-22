@@ -1,0 +1,247 @@
+{
+    "name": "KARDEX CHECKLIST",
+    "flow": [
+        {
+            "id": 1,
+            "module": "tally:watchNewResponse",
+            "version": 1,
+            "parameters": {
+                "__IMTHOOK__": 1458349
+            },
+            "mapper": {},
+            "metadata": {
+                "designer": {
+                    "x": 0,
+                    "y": 0,
+                    "name": "KARDEX GETS CHECKED"
+                },
+                "restore": {
+                    "parameters": {
+                        "__IMTHOOK__": {
+                            "data": {
+                                "editable": "false"
+                            },
+                            "label": "My New Response webhook"
+                        }
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "__IMTHOOK__",
+                        "type": "hook:tally",
+                        "label": "Webhook",
+                        "required": true
+                    }
+                ],
+                "interface": [
+                    {
+                        "name": "eventId",
+                        "type": "text",
+                        "label": "Event ID"
+                    },
+                    {
+                        "name": "responseId",
+                        "type": "text",
+                        "label": "Response ID"
+                    },
+                    {
+                        "name": "submissionId",
+                        "type": "text",
+                        "label": "Submission ID"
+                    },
+                    {
+                        "name": "respondentId",
+                        "type": "text",
+                        "label": "Respondent ID"
+                    },
+                    {
+                        "name": "formId",
+                        "type": "text",
+                        "label": "Form ID"
+                    },
+                    {
+                        "name": "formName",
+                        "type": "text",
+                        "label": "Form Name"
+                    },
+                    {
+                        "name": "createdAt",
+                        "type": "date",
+                        "label": "Created at"
+                    },
+                    {
+                        "name": "fields",
+                        "spec": [
+                            {
+                                "name": "Date",
+                                "type": "text"
+                            },
+                            {
+                                "name": "Name",
+                                "type": "text"
+                            },
+                            {
+                                "name": "Tick if satisfactory",
+                                "spec": {
+                                    "type": "text"
+                                },
+                                "type": "array"
+                            },
+                            {
+                                "name": "Tick if satisfactory (Does emergency stop work?)",
+                                "type": "boolean"
+                            },
+                            {
+                                "name": "Tick if satisfactory (Does the light work?)",
+                                "type": "boolean"
+                            },
+                            {
+                                "name": "Tick if satisfactory (Do the shelves move up?)",
+                                "type": "boolean"
+                            },
+                            {
+                                "name": "Tick if satisfactory (Do the shelves move down?)",
+                                "type": "boolean"
+                            }
+                        ],
+                        "type": "collection",
+                        "label": "Fields"
+                    },
+                    {
+                        "name": "fieldsById",
+                        "spec": [
+                            {
+                                "name": "question_yNlAdx",
+                                "type": "text",
+                                "label": "Date"
+                            },
+                            {
+                                "name": "question_XreA2Y",
+                                "type": "text",
+                                "label": "Name"
+                            },
+                            {
+                                "name": "question_8zdDRP",
+                                "spec": {
+                                    "type": "text"
+                                },
+                                "type": "array",
+                                "label": "Tick if satisfactory"
+                            },
+                            {
+                                "name": "question_8zdDRP_5d6e30ec-2dc2-402e-a3eb-c890181100a0",
+                                "type": "boolean",
+                                "label": "Tick if satisfactory (Does emergency stop work?)"
+                            },
+                            {
+                                "name": "question_8zdDRP_b73f25ff-5d35-4f04-b9c0-966bbfc4863b",
+                                "type": "boolean",
+                                "label": "Tick if satisfactory (Does the light work?)"
+                            },
+                            {
+                                "name": "question_8zdDRP_8710aef6-677b-49a1-b39a-86691832a0de",
+                                "type": "boolean",
+                                "label": "Tick if satisfactory (Do the shelves move up?)"
+                            },
+                            {
+                                "name": "question_8zdDRP_c2f76002-47c4-492d-a841-90683537d1c7",
+                                "type": "boolean",
+                                "label": "Tick if satisfactory (Do the shelves move down?)"
+                            }
+                        ],
+                        "type": "collection",
+                        "label": "Fields by ID"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 2,
+            "module": "google-docs:createADocumentFromTemplate",
+            "version": 1,
+            "metadata": {
+                "designer": {
+                    "x": 300,
+                    "y": 0,
+                    "name": "CREATE PDF",
+                    "messages": [
+                        {
+                            "category": "setup",
+                            "severity": "error",
+                            "message": "Value must not be empty."
+                        },
+                        {
+                            "category": "setup",
+                            "severity": "error",
+                            "message": "Value must not be empty."
+                        },
+                        {
+                            "category": "setup",
+                            "severity": "error",
+                            "message": "Value must not be empty."
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": 3,
+            "module": "google-docs:exportADocument",
+            "version": 1,
+            "metadata": {
+                "designer": {
+                    "x": 600,
+                    "y": 0,
+                    "name": "DOWNLOAD PDF",
+                    "messages": [
+                        {
+                            "category": "setup",
+                            "severity": "error",
+                            "message": "Value must not be empty."
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": 4,
+            "module": "email:ActionSendEmail",
+            "version": 7,
+            "metadata": {
+                "designer": {
+                    "x": 900,
+                    "y": 0,
+                    "name": "EMAIL HR",
+                    "messages": [
+                        {
+                            "category": "setup",
+                            "severity": "error",
+                            "message": "Field must not be empty."
+                        }
+                    ]
+                }
+            }
+        }
+    ],
+    "metadata": {
+        "instant": true,
+        "version": 1,
+        "scenario": {
+            "roundtrips": 1,
+            "maxErrors": 3,
+            "autoCommit": true,
+            "autoCommitTriggerLast": true,
+            "sequential": false,
+            "slots": null,
+            "confidential": false,
+            "dataloss": false,
+            "dlq": false,
+            "freshVariables": false
+        },
+        "designer": {
+            "orphans": []
+        },
+        "zone": "eu2.make.com",
+        "notes": []
+    }
+}

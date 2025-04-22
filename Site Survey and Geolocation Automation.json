@@ -1,0 +1,1387 @@
+{
+    "name": "ZERON SITE DATA FORM",
+    "flow": [
+        {
+            "id": 24,
+            "module": "tally:watchNewResponse",
+            "version": 1,
+            "parameters": {
+                "__IMTHOOK__": 1306398
+            },
+            "mapper": {},
+            "metadata": {
+                "designer": {
+                    "x": 0,
+                    "y": 0,
+                    "name": "FORM COMPLETED"
+                },
+                "restore": {
+                    "parameters": {
+                        "__IMTHOOK__": {
+                            "data": {
+                                "editable": "false"
+                            },
+                            "label": "My New Response webhook"
+                        }
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "__IMTHOOK__",
+                        "type": "hook:tally",
+                        "label": "Webhook",
+                        "required": true
+                    }
+                ],
+                "interface": [
+                    {
+                        "name": "eventId",
+                        "type": "text",
+                        "label": "Event ID"
+                    },
+                    {
+                        "name": "responseId",
+                        "type": "text",
+                        "label": "Response ID"
+                    },
+                    {
+                        "name": "submissionId",
+                        "type": "text",
+                        "label": "Submission ID"
+                    },
+                    {
+                        "name": "respondentId",
+                        "type": "text",
+                        "label": "Respondent ID"
+                    },
+                    {
+                        "name": "formId",
+                        "type": "text",
+                        "label": "Form ID"
+                    },
+                    {
+                        "name": "formName",
+                        "type": "text",
+                        "label": "Form Name"
+                    },
+                    {
+                        "name": "createdAt",
+                        "type": "date",
+                        "label": "Created at"
+                    },
+                    {
+                        "name": "fields",
+                        "spec": [
+                            {
+                                "name": "What is your name?",
+                                "type": "text"
+                            },
+                            {
+                                "name": "Company",
+                                "type": "text"
+                            },
+                            {
+                                "name": "Phone number",
+                                "type": "text"
+                            },
+                            {
+                                "name": "Site (company) name",
+                                "type": "text"
+                            },
+                            {
+                                "name": "Site (company) address",
+                                "type": "text"
+                            },
+                            {
+                                "name": "\n\nConfirm if 12-month HHD data and recent electricity bill (all pages) are provided\n\n",
+                                "spec": {
+                                    "type": "text"
+                                },
+                                "type": "array"
+                            },
+                            {
+                                "name": "\n\nConfirm if 12-month HHD data and recent electricity bill (all pages) are provided\n\n (Yes)",
+                                "type": "boolean"
+                            },
+                            {
+                                "name": "\n\nConfirm if 12-month HHD data and recent electricity bill (all pages) are provided\n\n (No)",
+                                "type": "boolean"
+                            },
+                            {
+                                "name": "\n\nEnergy-saving measures implemented?\nNone - Partial - Extensive\n\n",
+                                "type": "text"
+                            },
+                            {
+                                "name": "\n\nPlease describe the building type or sector that best matches the site (e.g., residential, commercial, industrial, etc.)\n\n",
+                                "type": "text"
+                            },
+                            {
+                                "name": "\n\nExisting Electrical Supply Details: Please upload photos of the meter, incoming electrical supply, and main switch\n\n",
+                                "spec": [
+                                    {
+                                        "name": "id",
+                                        "type": "text",
+                                        "label": "File ID"
+                                    },
+                                    {
+                                        "name": "name",
+                                        "type": "text",
+                                        "label": "File Name"
+                                    },
+                                    {
+                                        "name": "url",
+                                        "type": "url",
+                                        "label": "File URL"
+                                    },
+                                    {
+                                        "name": "mimeType",
+                                        "type": "text",
+                                        "label": "File Mime Type"
+                                    },
+                                    {
+                                        "name": "size",
+                                        "type": "uinteger",
+                                        "label": "File Size"
+                                    }
+                                ],
+                                "type": "array"
+                            },
+                            {
+                                "name": "Main switch size-AMPS",
+                                "type": "text"
+                            },
+                            {
+                                "name": "Electricity meter CT size- e.g 800:5",
+                                "type": "text"
+                            },
+                            {
+                                "name": "Transformer size KVA - only applicable for sites with their own transformers",
+                                "type": "text"
+                            },
+                            {
+                                "name": "Capacity(KW) of existing renewable generation, e.g PV, Wind, CHP",
+                                "type": "text"
+                            },
+                            {
+                                "name": "\n\nPlease specify the model type required for the site (e.g., Standard or Intelligent)\n\n",
+                                "type": "text"
+                            },
+                            {
+                                "name": "\n\nPlease describe the network signal strength available at the site (e.g., Strong, Average, Poor, None)\n\n",
+                                "type": "text"
+                            },
+                            {
+                                "name": "Additional Notes",
+                                "type": "text"
+                            }
+                        ],
+                        "type": "collection",
+                        "label": "Fields"
+                    },
+                    {
+                        "name": "fieldsById",
+                        "spec": [
+                            {
+                                "name": "question_Az1pWk",
+                                "type": "text",
+                                "label": "What is your name?"
+                            },
+                            {
+                                "name": "question_zjPeJ1",
+                                "type": "text",
+                                "label": "Company"
+                            },
+                            {
+                                "name": "question_5bW2vM",
+                                "type": "text",
+                                "label": "Phone number"
+                            },
+                            {
+                                "name": "question_dEBPjz",
+                                "type": "text",
+                                "label": "Site (company) name"
+                            },
+                            {
+                                "name": "question_YPNdYq",
+                                "type": "text",
+                                "label": "Site (company) address"
+                            },
+                            {
+                                "name": "question_DBgeDb",
+                                "spec": {
+                                    "type": "text"
+                                },
+                                "type": "array",
+                                "label": "\n\nConfirm if 12-month HHD data and recent electricity bill (all pages) are provided\n\n"
+                            },
+                            {
+                                "name": "question_DBgeDb_8d5d2a04-8066-4e56-83b8-4db619b086f7",
+                                "type": "boolean",
+                                "label": "\n\nConfirm if 12-month HHD data and recent electricity bill (all pages) are provided\n\n (Yes)"
+                            },
+                            {
+                                "name": "question_DBgeDb_11a59e43-f5ae-4f7e-9b07-27cd325561ac",
+                                "type": "boolean",
+                                "label": "\n\nConfirm if 12-month HHD data and recent electricity bill (all pages) are provided\n\n (No)"
+                            },
+                            {
+                                "name": "question_6LaO7O",
+                                "type": "text",
+                                "label": "\n\nEnergy-saving measures implemented?\nNone - Partial - Extensive\n\n"
+                            },
+                            {
+                                "name": "question_7q6VW9",
+                                "type": "text",
+                                "label": "\n\nPlease describe the building type or sector that best matches the site (e.g., residential, commercial, industrial, etc.)\n\n"
+                            },
+                            {
+                                "name": "question_oEXOd1",
+                                "spec": [
+                                    {
+                                        "name": "id",
+                                        "type": "text",
+                                        "label": "File ID"
+                                    },
+                                    {
+                                        "name": "name",
+                                        "type": "text",
+                                        "label": "File Name"
+                                    },
+                                    {
+                                        "name": "url",
+                                        "type": "url",
+                                        "label": "File URL"
+                                    },
+                                    {
+                                        "name": "mimeType",
+                                        "type": "text",
+                                        "label": "File Mime Type"
+                                    },
+                                    {
+                                        "name": "size",
+                                        "type": "uinteger",
+                                        "label": "File Size"
+                                    }
+                                ],
+                                "type": "array",
+                                "label": "\n\nExisting Electrical Supply Details: Please upload photos of the meter, incoming electrical supply, and main switch\n\n"
+                            },
+                            {
+                                "name": "question_G680Dj",
+                                "type": "text",
+                                "label": "Main switch size-AMPS"
+                            },
+                            {
+                                "name": "question_OaO0YK",
+                                "type": "text",
+                                "label": "Electricity meter CT size- e.g 800:5"
+                            },
+                            {
+                                "name": "question_VG28Ya",
+                                "type": "text",
+                                "label": "Transformer size KVA - only applicable for sites with their own transformers"
+                            },
+                            {
+                                "name": "question_PpV0YQ",
+                                "type": "text",
+                                "label": "Capacity(KW) of existing renewable generation, e.g PV, Wind, CHP"
+                            },
+                            {
+                                "name": "question_bqb872",
+                                "type": "text",
+                                "label": "\n\nPlease specify the model type required for the site (e.g., Standard or Intelligent)\n\n"
+                            },
+                            {
+                                "name": "question_Az1qdW",
+                                "type": "text",
+                                "label": "\n\nPlease describe the network signal strength available at the site (e.g., Strong, Average, Poor, None)\n\n"
+                            },
+                            {
+                                "name": "question_4Qejvb",
+                                "type": "text",
+                                "label": "Additional Notes"
+                            }
+                        ],
+                        "type": "collection",
+                        "label": "Fields by ID"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 25,
+            "module": "perplexity-ai:createAChatCompletion",
+            "version": 1,
+            "parameters": {
+                "__IMTCONN__": 4167356
+            },
+            "mapper": {
+                "model": "llama-3.1-sonar-large-128k-online",
+                "messages": [
+                    {
+                        "role": "user",
+                        "content": "Analyse the geographic area around {{24.fields.`Site (company) name`}}{{24.fields.`Site (company) address`}} to provide concise, actionable insights tailored to Zeron's business goals. \n\nOutput should focus on easy-to-read bullet points, highlighting key opportunities and challenges directly relevant to installations, customer acquisition, or marketing. \nUse UK grammar and keep the analysis concise.\n\nSpecifically, focus on:\n\nSustainability Trends:\nHighlight local environmental initiatives, green energy adoption, or interest in energy-saving measures.\n\nMarketing and Brand Exposure:\nHighlight specific high-visibility opportunities near the site, such as busy roads, retail hubs, or active commercial zones. Ensure all referenced locations are directly relevant to the address. Identify potential partnerships with nearby businesses or community initiatives that align with Zeron’s goals.\n\nBusiness Opportunities:\nIdentify specific local businesses, sectors, or industrial zones near {{24.fields.`Site (company) address`}} that have high electricity consumption and could benefit from voltage optimisation. \nAvoid vague references; focus on examples directly relevant to the area.\nInclude Local Landmarks or Business Clusters:Ensure the analysis pulls data about specific retail parks, industrial estates, or well-known facilities near the given address.\n\nSurrounding Businesses and Partnerships:\nHighlight complementary businesses for partnerships (e.g., eco-focused firms or tech hubs).Note any competitors or businesses offering similar services.\n\nSustainability Initiatives:\nHighlight local green initiatives, incentives, or community programmes that align with Zeron’s sustainability goals.\n\nOutput Format:\nProvide the results as clear, professional bullet points, ensuring that insights are actionable and directly relevant to Zeron’s objectives. Avoid long-winded explanations or unrelated details.\n\n\n\nOutput Format and Dummy Example:\n\nProvide the results under the following structure with\nbullet points for each section:\n\nBusiness:\nThe area is predominantly industrial, with a strong presence of manufacturing units that consume high levels of electricity.\nGrowing interest in sustainability among local businesses, particularly in light industrial sectors.\n\nMarketing and Brand Exposure:\nHigh visibility along Main Road A, which sees significant daily commuter traffic.\nNearby Retail Zone A offers opportunities to showcase Zeron’s solutions through partnerships with eco-conscious businesses.\n\n\nBusiness Opportunities:\nExamples include Widget Manufacturing Co. and Tech Assembly Plant nearby, both of which are high electricity consumers likely to benefit from voltage optimisation.\nRetail chains such as Store A and Store B also present strong potential for energy savings.\n\n\nSurrounding Businesses and Partnerships:\nPotential for partnerships with Green Supply Co., an eco-focused retailer located within 0.5 miles.\nNo direct competitors identified offering voltage optimisation in the immediate vicinity.\n\nSustainability Initiatives:\nThe local council offers financial incentives for energy efficiency projects through the “Green Business Fund.”\n Regular sustainability workshops hosted at Local Community Centre provide a platform for Zeron’s brand promotion."
+                    }
+                ],
+                "max_tokens": "1500"
+            },
+            "metadata": {
+                "designer": {
+                    "x": 300,
+                    "y": 0,
+                    "name": "LOCATION ANALYSIS"
+                },
+                "restore": {
+                    "expect": {
+                        "model": {
+                            "mode": "chose",
+                            "label": "llama-3.1-sonar-large-128k-online"
+                        },
+                        "messages": {
+                            "mode": "chose",
+                            "items": [
+                                {
+                                    "role": {
+                                        "mode": "chose",
+                                        "label": "User"
+                                    }
+                                }
+                            ]
+                        },
+                        "return_images": {
+                            "mode": "chose"
+                        },
+                        "search_domain_filter": {
+                            "mode": "chose"
+                        },
+                        "search_recency_filter": {
+                            "mode": "chose",
+                            "label": "Empty"
+                        },
+                        "return_related_questions": {
+                            "mode": "chose"
+                        }
+                    },
+                    "parameters": {
+                        "__IMTCONN__": {
+                            "data": {
+                                "scoped": "true",
+                                "connection": "perplexity-ai"
+                            },
+                            "label": "My Perplexity connection"
+                        }
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "__IMTCONN__",
+                        "type": "account:perplexity-ai",
+                        "label": "Connection",
+                        "required": true
+                    }
+                ],
+                "expect": [
+                    {
+                        "name": "model",
+                        "type": "select",
+                        "label": "Model",
+                        "required": true
+                    },
+                    {
+                        "name": "messages",
+                        "spec": [
+                            {
+                                "name": "content",
+                                "type": "text",
+                                "label": "Content",
+                                "required": true
+                            },
+                            {
+                                "name": "role",
+                                "type": "select",
+                                "label": "Role",
+                                "options": [
+                                    {
+                                        "label": "User",
+                                        "value": "user"
+                                    },
+                                    {
+                                        "label": "Assistant",
+                                        "value": "assistant"
+                                    },
+                                    {
+                                        "label": "System",
+                                        "value": "system"
+                                    }
+                                ],
+                                "required": true
+                            }
+                        ],
+                        "type": "array",
+                        "label": "Messages",
+                        "required": true
+                    },
+                    {
+                        "name": "max_tokens",
+                        "type": "number",
+                        "label": "Max Tokens"
+                    },
+                    {
+                        "name": "temperature",
+                        "type": "number",
+                        "label": "Temperature",
+                        "validate": {
+                            "max": 1.999,
+                            "min": 0
+                        }
+                    },
+                    {
+                        "name": "top_p",
+                        "type": "number",
+                        "label": "Top P",
+                        "validate": {
+                            "max": 1,
+                            "min": 0
+                        }
+                    },
+                    {
+                        "name": "top_k",
+                        "type": "number",
+                        "label": "Top K",
+                        "validate": {
+                            "max": 2048,
+                            "min": 0
+                        }
+                    },
+                    {
+                        "name": "presence_penalty",
+                        "type": "number",
+                        "label": "Presence Penalty",
+                        "validate": {
+                            "max": 2,
+                            "min": -2
+                        }
+                    },
+                    {
+                        "name": "frequency_penalty",
+                        "type": "number",
+                        "label": "Frequency Penalty",
+                        "validate": {
+                            "min": 0
+                        }
+                    },
+                    {
+                        "name": "search_domain_filter",
+                        "spec": {
+                            "name": "value",
+                            "type": "text"
+                        },
+                        "type": "array",
+                        "label": "Search Domain Filter"
+                    },
+                    {
+                        "name": "search_recency_filter",
+                        "type": "select",
+                        "label": "Search Recency Filter",
+                        "validate": {
+                            "enum": [
+                                "month",
+                                "week",
+                                "day",
+                                "hour"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "return_images",
+                        "type": "boolean",
+                        "label": "Return Images"
+                    },
+                    {
+                        "name": "return_related_questions",
+                        "type": "boolean",
+                        "label": "Return Related Questions"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 26,
+            "module": "google-docs:createADocumentFromTemplate",
+            "version": 1,
+            "parameters": {
+                "__IMTCONN__": 4167289
+            },
+            "mapper": {
+                "from": "drive",
+                "name": "{{24.fields.`Site (company) name`}}",
+                "select": "dropdown",
+                "document": "/1IGmDmN3ZcHNXCFGPHFRnQfvdTTpvqtwOwc9xtrn6FFA",
+                "folderId": "/1tw4CbcOyPqO7HFGy0fbt1gDCPepw9X7n",
+                "requests": {
+                    "date": "{{formatDate(now; \"DD/MM/YY HH:mm\")}} GMT",
+                    "summary": "{{25.choices[].message.content}}",
+                    "Site_name": "{{24.fields.`Site (company) name`}}",
+                    "Site_Address": "{{24.fields.`Site (company) address`}}"
+                },
+                "destination": "drive"
+            },
+            "metadata": {
+                "designer": {
+                    "x": 611,
+                    "y": -4,
+                    "name": "LOCATION REPORT PDF"
+                },
+                "restore": {
+                    "expect": {
+                        "from": {
+                            "label": "My Drive"
+                        },
+                        "select": {
+                            "label": "By Dropdown"
+                        },
+                        "document": {
+                            "path": [
+                                "102Location report PDF"
+                            ]
+                        },
+                        "folderId": {
+                            "mode": "chose",
+                            "path": [
+                                "Google AI Studio"
+                            ]
+                        },
+                        "destination": {
+                            "label": "My Drive"
+                        }
+                    },
+                    "parameters": {
+                        "__IMTCONN__": {
+                            "data": {
+                                "scoped": "true",
+                                "connection": "google"
+                            },
+                            "label": "My Google connection (wowimadeit77@gmail.com)"
+                        }
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "__IMTCONN__",
+                        "type": "account:google",
+                        "label": "Connection",
+                        "required": true
+                    }
+                ],
+                "expect": [
+                    {
+                        "name": "select",
+                        "type": "select",
+                        "label": "Create a Document from a Template",
+                        "required": true,
+                        "validate": {
+                            "enum": [
+                                "map",
+                                "dropdown"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "name",
+                        "type": "text",
+                        "label": "Title",
+                        "required": true
+                    },
+                    {
+                        "name": "destination",
+                        "type": "select",
+                        "label": "New Drive Location",
+                        "required": true,
+                        "validate": {
+                            "enum": [
+                                "drive",
+                                "share",
+                                "team"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "from",
+                        "type": "select",
+                        "label": "Choose a Drive",
+                        "required": true,
+                        "validate": {
+                            "enum": [
+                                "drive",
+                                "share",
+                                "team"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "document",
+                        "type": "file",
+                        "label": "Document ID",
+                        "required": true
+                    },
+                    {
+                        "name": "requests",
+                        "spec": [
+                            {
+                                "name": "date",
+                                "type": "any"
+                            },
+                            {
+                                "name": "Site_name",
+                                "type": "any"
+                            },
+                            {
+                                "name": "Site_Address",
+                                "type": "any"
+                            },
+                            {
+                                "name": "summary",
+                                "type": "any"
+                            }
+                        ],
+                        "type": "collection",
+                        "label": "Values"
+                    },
+                    {
+                        "name": "folderId",
+                        "type": "folder",
+                        "label": "New Document's Location",
+                        "required": true
+                    }
+                ]
+            }
+        },
+        {
+            "id": 22,
+            "module": "google-docs:createADocumentFromTemplate",
+            "version": 1,
+            "parameters": {
+                "__IMTCONN__": 4167289
+            },
+            "mapper": {
+                "from": "drive",
+                "name": "Site Survey Data",
+                "select": "dropdown",
+                "document": "/1t0jryofFxt9oqaSMp6tj2jqZahSi6iobm28kZQRyKy0",
+                "folderId": "/1tw4CbcOyPqO7HFGy0fbt1gDCPepw9X7n",
+                "requests": {
+                    "Site_Name": "{{24.fields.Company}}",
+                    "Model_Type": "{{24.fieldsById.question_bqb872}}",
+                    "Survey_Date": "{{formatDate(now; \"DD/MM/YY HH:mm\")}} GMT",
+                    "Contact_Name": "{{24.fields.`What is your name?`}}",
+                    "Phone_Number": "{{24.fields.`Phone number`}}",
+                    "Site_Address": "{{24.fields.`Site (company) address`}}",
+                    "Meter_CT_Size": "{{24.fields.`Electricity meter CT size- e.g 800:5`}}",
+                    "Additional_Notes": "{{24.fieldsById.question_4Qejvb}}",
+                    "Transformer_Size": "{{24.fields.`Transformer size KVA - only applicable for sites with their own transformers`}}",
+                    "Main_Switch_Supply": "{{24.fields.`Main switch size-AMPS`}}",
+                    "Energy_Saving_Measures": "{{24.fields.`Capacity(KW) of existing renewable generation, e.g PV, Wind, CHP`}}",
+                    "Network_Signal_Strength": "{{24.fieldsById.question_Az1qdW}}"
+                },
+                "destination": "drive"
+            },
+            "metadata": {
+                "designer": {
+                    "x": 900,
+                    "y": 0,
+                    "name": "SUMMARY PDF"
+                },
+                "restore": {
+                    "expect": {
+                        "from": {
+                            "label": "My Drive"
+                        },
+                        "select": {
+                            "label": "By Dropdown"
+                        },
+                        "document": {
+                            "path": [
+                                "102Site Survey Report"
+                            ]
+                        },
+                        "folderId": {
+                            "mode": "chose",
+                            "path": [
+                                "Google AI Studio"
+                            ]
+                        },
+                        "destination": {
+                            "label": "My Drive"
+                        }
+                    },
+                    "parameters": {
+                        "__IMTCONN__": {
+                            "data": {
+                                "scoped": "true",
+                                "connection": "google"
+                            },
+                            "label": "My Google connection (wowimadeit77@gmail.com)"
+                        }
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "__IMTCONN__",
+                        "type": "account:google",
+                        "label": "Connection",
+                        "required": true
+                    }
+                ],
+                "expect": [
+                    {
+                        "name": "select",
+                        "type": "select",
+                        "label": "Create a Document from a Template",
+                        "required": true,
+                        "validate": {
+                            "enum": [
+                                "map",
+                                "dropdown"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "name",
+                        "type": "text",
+                        "label": "Title",
+                        "required": true
+                    },
+                    {
+                        "name": "destination",
+                        "type": "select",
+                        "label": "New Drive Location",
+                        "required": true,
+                        "validate": {
+                            "enum": [
+                                "drive",
+                                "share",
+                                "team"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "from",
+                        "type": "select",
+                        "label": "Choose a Drive",
+                        "required": true,
+                        "validate": {
+                            "enum": [
+                                "drive",
+                                "share",
+                                "team"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "document",
+                        "type": "file",
+                        "label": "Document ID",
+                        "required": true
+                    },
+                    {
+                        "name": "requests",
+                        "spec": [
+                            {
+                                "name": "Survey_Date",
+                                "type": "any"
+                            },
+                            {
+                                "name": "Site_Name",
+                                "type": "any"
+                            },
+                            {
+                                "name": "Site_Address",
+                                "type": "any"
+                            },
+                            {
+                                "name": "Contact_Name",
+                                "type": "any"
+                            },
+                            {
+                                "name": "Phone_Number",
+                                "type": "any"
+                            },
+                            {
+                                "name": "Energy_Saving_Measures",
+                                "type": "any"
+                            },
+                            {
+                                "name": "Transformer_Size",
+                                "type": "any"
+                            },
+                            {
+                                "name": "Main_Switch_Supply",
+                                "type": "any"
+                            },
+                            {
+                                "name": "Meter_CT_Size",
+                                "type": "any"
+                            },
+                            {
+                                "name": "Model_Type",
+                                "type": "any"
+                            },
+                            {
+                                "name": "Network_Signal_Strength",
+                                "type": "any"
+                            },
+                            {
+                                "name": "Additional_Notes",
+                                "type": "any"
+                            }
+                        ],
+                        "type": "collection",
+                        "label": "Values"
+                    },
+                    {
+                        "name": "folderId",
+                        "type": "folder",
+                        "label": "New Document's Location",
+                        "required": true
+                    }
+                ]
+            }
+        },
+        {
+            "id": 18,
+            "module": "airtable:ActionCreateRecord",
+            "version": 3,
+            "parameters": {
+                "__IMTCONN__": 4169469
+            },
+            "mapper": {
+                "base": "appy14XdeImY6a3Zs",
+                "table": "tblAys7pLvFzDCrMQ",
+                "record": {
+                    "fld4n7f927z5dgxCH": "{{22.webViewLink}}",
+                    "fldA0NMYXOA7W034P": [
+                        {
+                            "url": "{{24.fieldsById.question_oEXOd1[].url}}"
+                        }
+                    ],
+                    "fldDyLIS9f3tkvK3A": "{{24.fieldsById.question_G680Dj}}",
+                    "fldIApM4HGK4JBkz3": "{{24.fieldsById.question_4Qejvb}}",
+                    "fldJyxPwrLL9G7e9Y": "{{24.fieldsById.question_VG28Ya}}",
+                    "fldSfL1HZknLB8xc4": "{{24.fields.`Site (company) address`}}",
+                    "fldUnPXknF6f5d5K9": "{{24.fields.`What is your name?`}}",
+                    "fldh3ntZglRuzrGeh": "{{24.fieldsById.question_bqb872}}",
+                    "fldkqfHXjsBbwnCA9": "{{24.fields.Company}}",
+                    "fldmJRBqihxmdfdXn": "{{25.choices[].message.content}}",
+                    "fldpeTWZ4TO1zUM85": "{{24.fieldsById.question_OaO0YK}}",
+                    "fldsseqZjN73NnvL3": "{{26.webViewLink}}",
+                    "fldyUc1betWRIwHQC": "{{24.fields.`Phone number`}}",
+                    "fldyhqcs0ww9wt1fZ": "{{24.fieldsById.question_Az1qdW}}"
+                },
+                "typecast": false,
+                "useColumnId": false
+            },
+            "metadata": {
+                "designer": {
+                    "x": 1200,
+                    "y": 0,
+                    "name": "LOG ALL DATA"
+                },
+                "restore": {
+                    "expect": {
+                        "base": {
+                            "label": "Zeron Site Survey Data"
+                        },
+                        "table": {
+                            "label": "Imported table",
+                            "nested": [
+                                {
+                                    "name": "record",
+                                    "spec": [
+                                        {
+                                            "name": "fldUnPXknF6f5d5K9",
+                                            "type": "text",
+                                            "label": "Full Name",
+                                            "multiline": true
+                                        },
+                                        {
+                                            "name": "fldkqfHXjsBbwnCA9",
+                                            "type": "text",
+                                            "label": "Company Name",
+                                            "multiline": true
+                                        },
+                                        {
+                                            "name": "fldyUc1betWRIwHQC",
+                                            "type": "number",
+                                            "label": "Phone"
+                                        },
+                                        {
+                                            "name": "fldSfL1HZknLB8xc4",
+                                            "type": "text",
+                                            "label": "Company Address",
+                                            "multiline": true
+                                        },
+                                        {
+                                            "name": "fldh3ntZglRuzrGeh",
+                                            "type": "text",
+                                            "label": "Model"
+                                        },
+                                        {
+                                            "name": "fldpeTWZ4TO1zUM85",
+                                            "type": "text",
+                                            "label": "CT Size"
+                                        },
+                                        {
+                                            "name": "fldyhqcs0ww9wt1fZ",
+                                            "type": "text",
+                                            "label": "Network Signal"
+                                        },
+                                        {
+                                            "name": "fldJyxPwrLL9G7e9Y",
+                                            "type": "text",
+                                            "label": "Transformer Size (kVA)",
+                                            "multiline": true
+                                        },
+                                        {
+                                            "name": "fldDyLIS9f3tkvK3A",
+                                            "type": "text",
+                                            "label": "Main Switch Supply Size (Amps)",
+                                            "multiline": true
+                                        },
+                                        {
+                                            "name": "fldIApM4HGK4JBkz3",
+                                            "type": "text",
+                                            "label": "Additional Notes",
+                                            "multiline": true
+                                        },
+                                        {
+                                            "name": "fldA0NMYXOA7W034P",
+                                            "spec": [
+                                                {
+                                                    "help": "Airtable will download the file at the given url and keep its own copy of it.",
+                                                    "name": "url",
+                                                    "type": "text",
+                                                    "label": "File URL"
+                                                },
+                                                {
+                                                    "help": "If empty, Airtable will generate the name automatically.",
+                                                    "name": "filename",
+                                                    "type": "filename",
+                                                    "label": "File name"
+                                                }
+                                            ],
+                                            "type": "array",
+                                            "label": "Photos",
+                                            "editable": true
+                                        },
+                                        {
+                                            "name": "fld4n7f927z5dgxCH",
+                                            "type": "text",
+                                            "label": "PDF-Summary"
+                                        },
+                                        {
+                                            "name": "fldsseqZjN73NnvL3",
+                                            "type": "text",
+                                            "label": "PDF-Location Report"
+                                        },
+                                        {
+                                            "name": "fldmJRBqihxmdfdXn",
+                                            "type": "text",
+                                            "label": "Location Impact Notes",
+                                            "multiline": true
+                                        },
+                                        {
+                                            "name": "fld2aWB42rGL8sb0b",
+                                            "type": "text",
+                                            "label": "PDF Summary"
+                                        }
+                                    ],
+                                    "type": "collection",
+                                    "label": "Record"
+                                }
+                            ]
+                        },
+                        "record": {
+                            "nested": {
+                                "fldA0NMYXOA7W034P": {
+                                    "mode": "chose",
+                                    "items": [
+                                        null
+                                    ]
+                                }
+                            }
+                        },
+                        "typecast": {
+                            "mode": "chose"
+                        },
+                        "useColumnId": {
+                            "mode": "chose"
+                        }
+                    },
+                    "parameters": {
+                        "__IMTCONN__": {
+                            "data": {
+                                "scoped": "true",
+                                "connection": "airtable2"
+                            },
+                            "label": "My Airtable Token or Key connection"
+                        }
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "__IMTCONN__",
+                        "type": "account:airtable3,airtable2",
+                        "label": "Connection",
+                        "required": true
+                    }
+                ],
+                "expect": [
+                    {
+                        "name": "base",
+                        "type": "select",
+                        "label": "Base",
+                        "required": true
+                    },
+                    {
+                        "name": "typecast",
+                        "type": "boolean",
+                        "label": "Smart links",
+                        "required": true
+                    },
+                    {
+                        "name": "useColumnId",
+                        "type": "boolean",
+                        "label": "Use Column ID",
+                        "required": true
+                    },
+                    {
+                        "name": "table",
+                        "type": "select",
+                        "label": "Table",
+                        "required": true
+                    },
+                    {
+                        "name": "record",
+                        "spec": [
+                            {
+                                "name": "fldUnPXknF6f5d5K9",
+                                "type": "text",
+                                "label": "Full Name"
+                            },
+                            {
+                                "name": "fldkqfHXjsBbwnCA9",
+                                "type": "text",
+                                "label": "Company Name"
+                            },
+                            {
+                                "name": "fldyUc1betWRIwHQC",
+                                "type": "number",
+                                "label": "Phone"
+                            },
+                            {
+                                "name": "fldSfL1HZknLB8xc4",
+                                "type": "text",
+                                "label": "Company Address"
+                            },
+                            {
+                                "name": "fldh3ntZglRuzrGeh",
+                                "type": "text",
+                                "label": "Model"
+                            },
+                            {
+                                "name": "fldpeTWZ4TO1zUM85",
+                                "type": "text",
+                                "label": "CT Size"
+                            },
+                            {
+                                "name": "fldyhqcs0ww9wt1fZ",
+                                "type": "text",
+                                "label": "Network Signal"
+                            },
+                            {
+                                "name": "fldJyxPwrLL9G7e9Y",
+                                "type": "text",
+                                "label": "Transformer Size (kVA)"
+                            },
+                            {
+                                "name": "fldDyLIS9f3tkvK3A",
+                                "type": "text",
+                                "label": "Main Switch Supply Size (Amps)"
+                            },
+                            {
+                                "name": "fldIApM4HGK4JBkz3",
+                                "type": "text",
+                                "label": "Additional Notes"
+                            },
+                            {
+                                "name": "fldA0NMYXOA7W034P",
+                                "spec": [
+                                    {
+                                        "name": "url",
+                                        "type": "text",
+                                        "label": "File URL"
+                                    },
+                                    {
+                                        "name": "filename",
+                                        "type": "filename",
+                                        "label": "File name"
+                                    }
+                                ],
+                                "type": "array",
+                                "label": "Photos"
+                            },
+                            {
+                                "name": "fld4n7f927z5dgxCH",
+                                "type": "text",
+                                "label": "PDF-Summary"
+                            },
+                            {
+                                "name": "fldsseqZjN73NnvL3",
+                                "type": "text",
+                                "label": "PDF-Location Report"
+                            },
+                            {
+                                "name": "fldmJRBqihxmdfdXn",
+                                "type": "text",
+                                "label": "Location Impact Notes"
+                            },
+                            {
+                                "name": "fld2aWB42rGL8sb0b",
+                                "type": "text",
+                                "label": "PDF Summary"
+                            }
+                        ],
+                        "type": "collection",
+                        "label": "Record"
+                    }
+                ],
+                "interface": [
+                    {
+                        "name": "id",
+                        "type": "text",
+                        "label": "ID"
+                    },
+                    {
+                        "name": "createdTime",
+                        "type": "date",
+                        "label": "Created Time"
+                    },
+                    {
+                        "name": "Full Name",
+                        "type": "text",
+                        "label": "Full Name",
+                        "multiline": true
+                    },
+                    {
+                        "name": "Company Name",
+                        "type": "text",
+                        "label": "Company Name",
+                        "multiline": true
+                    },
+                    {
+                        "name": "Phone",
+                        "type": "number",
+                        "label": "Phone"
+                    },
+                    {
+                        "name": "Company Address",
+                        "type": "text",
+                        "label": "Company Address",
+                        "multiline": true
+                    },
+                    {
+                        "name": "Model",
+                        "type": "text",
+                        "label": "Model"
+                    },
+                    {
+                        "name": "CT Size",
+                        "type": "text",
+                        "label": "CT Size"
+                    },
+                    {
+                        "name": "Network Signal",
+                        "type": "text",
+                        "label": "Network Signal"
+                    },
+                    {
+                        "name": "Transformer Size (kVA)",
+                        "type": "text",
+                        "label": "Transformer Size (kVA)",
+                        "multiline": true
+                    },
+                    {
+                        "name": "Main Switch Supply Size (Amps)",
+                        "type": "text",
+                        "label": "Main Switch Supply Size (Amps)",
+                        "multiline": true
+                    },
+                    {
+                        "name": "Additional Notes",
+                        "type": "text",
+                        "label": "Additional Notes",
+                        "multiline": true
+                    },
+                    {
+                        "name": "Photos",
+                        "spec": [
+                            {
+                                "name": "id",
+                                "type": "text",
+                                "label": "ID"
+                            },
+                            {
+                                "name": "width",
+                                "type": "uinteger",
+                                "label": "Width"
+                            },
+                            {
+                                "name": "height",
+                                "type": "uinteger",
+                                "label": "Height"
+                            },
+                            {
+                                "name": "url",
+                                "type": "url",
+                                "label": "URL"
+                            },
+                            {
+                                "name": "filename",
+                                "type": "filename",
+                                "label": "File name"
+                            },
+                            {
+                                "name": "size",
+                                "type": "uinteger",
+                                "label": "Size"
+                            },
+                            {
+                                "name": "type",
+                                "type": "text",
+                                "label": "MIME type"
+                            },
+                            {
+                                "name": "thumbnails",
+                                "spec": [
+                                    {
+                                        "name": "small",
+                                        "spec": [
+                                            {
+                                                "name": "url",
+                                                "type": "url",
+                                                "label": "URL"
+                                            },
+                                            {
+                                                "name": "width",
+                                                "type": "uinteger",
+                                                "label": "Width"
+                                            },
+                                            {
+                                                "name": "height",
+                                                "type": "uinteger",
+                                                "label": "Height"
+                                            }
+                                        ],
+                                        "type": "collection",
+                                        "label": "Small"
+                                    },
+                                    {
+                                        "name": "large",
+                                        "spec": [
+                                            {
+                                                "name": "url",
+                                                "type": "url",
+                                                "label": "URL"
+                                            },
+                                            {
+                                                "name": "width",
+                                                "type": "uinteger",
+                                                "label": "Width"
+                                            },
+                                            {
+                                                "name": "height",
+                                                "type": "uinteger",
+                                                "label": "Height"
+                                            }
+                                        ],
+                                        "type": "collection",
+                                        "label": "Large"
+                                    },
+                                    {
+                                        "name": "full",
+                                        "spec": [
+                                            {
+                                                "name": "url",
+                                                "type": "url",
+                                                "label": "URL"
+                                            },
+                                            {
+                                                "name": "width",
+                                                "type": "uinteger",
+                                                "label": "Width"
+                                            },
+                                            {
+                                                "name": "height",
+                                                "type": "uinteger",
+                                                "label": "Height"
+                                            }
+                                        ],
+                                        "type": "collection",
+                                        "label": "Full"
+                                    }
+                                ],
+                                "type": "collection",
+                                "label": "Thumbnails"
+                            }
+                        ],
+                        "type": "array",
+                        "label": "Photos"
+                    },
+                    {
+                        "name": "PDF-Summary",
+                        "type": "text",
+                        "label": "PDF-Summary"
+                    },
+                    {
+                        "name": "PDF-Location Report",
+                        "type": "text",
+                        "label": "PDF-Location Report"
+                    },
+                    {
+                        "name": "Location Impact Notes",
+                        "type": "text",
+                        "label": "Location Impact Notes",
+                        "multiline": true
+                    },
+                    {
+                        "name": "PDF Summary",
+                        "type": "text",
+                        "label": "PDF Summary"
+                    }
+                ],
+                "advanced": true
+            }
+        }
+    ],
+    "metadata": {
+        "instant": true,
+        "version": 1,
+        "scenario": {
+            "roundtrips": 1,
+            "maxErrors": 3,
+            "autoCommit": true,
+            "autoCommitTriggerLast": true,
+            "sequential": false,
+            "slots": null,
+            "confidential": false,
+            "dataloss": false,
+            "dlq": false,
+            "freshVariables": false
+        },
+        "designer": {
+            "orphans": []
+        },
+        "zone": "eu2.make.com",
+        "notes": []
+    }
+}
